@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #39297b;
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+    margin: 100px auto 50px;
+    font-weight: 600;
+    
+}
+
+#search {
+    background: #434989;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+#searchInput {
+    background: transparent;
+    color: #fff;
+    font-size: 18px;
+    flex: 1;
+    border: 0;
+    outline: 0;
+    padding: 0 30px;
+}
+
+#searchInput::placeholder {
+    color: #fff;
+    font-size: 18px;
+}
+
+#searchButton {
+    border-radius: 10px;
+}
+
+#show-more-btn {
+    background: #049cfb;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin: 10px auto 100px;
+    cursor: pointer;
+    display: none;
+}
+
+#search-result {
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Use repeat for clarity */
+    grid-gap: 40px;
+}
+
+#search-result img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+p.footer-text {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 18px;
+    color: white;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+p.footer-text span {
+    color: red; /* Color for the heart symbol */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    #search-result {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    #search-result {
+        grid-template-columns: 1fr; /* 1 column on small screens */
+    }
+
+    #searchInput {
+        font-size: 16px; /* Slightly smaller font for smaller screens */
+        padding: 0 15px; /* Reduced padding */
+    }
+
+    h1 {
+        margin: 50px auto 30px; /* Reduced margins for smaller screens */
+    }
+
+    #show-more-btn {
+        padding: 10px 15px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    p.footer-text {
+        font-size: 16px; /* Smaller font size for very small screens */
+    }
+}
