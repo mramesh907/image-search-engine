@@ -1,4 +1,4 @@
-const key = "7Ge3mjePdk_MiQWp11Ej-2DJFZyeKxP4XP5PEuLAREw";
+const key = process.env.KEY;
 const searchInput = document.getElementById("searchInput");
 const searchButton = document.getElementById("searchButton");
 const resultsContainer = document.getElementById("search-result");
